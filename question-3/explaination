@@ -1,0 +1,42 @@
+Function Definitions:
+
+//async function addAsync(a, b) {
+We define an async function named addAsync that takes two parameters a and b.
+
+   // await new Promise(resolve => setTimeout(resolve, 1000));
+Inside the function, we create a Promise using new Promise.
+We use setTimeout to simulate a delay of 1000 milliseconds (1 second).
+The resolve function is passed to setTimeout to resolve the Promise after the delay.
+The await keyword pauses the execution of the function until the Promise settles (i.e., until the delay is complete).
+
+ //  return a + b;
+}
+After the delay, the function returns the sum of the two parameters a and b.
+Function Definition:
+
+//async function calculate() {
+We define another async function named calculate.
+
+   // console.log("Calculating...");
+Inside the function, we log the message "Calculating..." to the console.
+
+    //const result = await addAsync(3, 4);
+We use the await keyword to call the addAsync function with arguments 3 and 4.
+This line waits for the addAsync function to finish its execution and return a result before proceeding.
+The result of addAsync(3, 4) (which is 7) is assigned to the variable result.
+
+    //console.log("Result:", result);
+}
+We log the message "Result:" followed by the value of result to the console.
+
+Calling calculate():
+//calculate();
+We call the calculate function to start the execution of the code inside it.
+This line-by-line explanation breaks down each part of the code, helping to understand how async and await are used to control the asynchronous execution flow.
+
+
+
+
+
+
+
